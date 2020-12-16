@@ -1,0 +1,162 @@
+ /*RESET*/
+ *{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*:visited {
+	color: #0000FF;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 62.5%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none; }
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400; text-align: center;}
+
+html {
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #222
+}
+
+ /* BEGIN CSS */
+ body {
+	background: rgb(72, 86, 91);
+	color: #eee;
+	text-shadow:0 0 10px #000;
+	font-size: 1.3em;
+	position: relative;
+	padding-top: 40px;
+}
+
+* {
+	line-height: 24px;
+	}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box{
+	margin: 0 60px;
+}
+
+.container{
+	border: 2px solid red;
+	margin: 20px 40px;
+}
+
+.button {
+	margin-top: 10px;
+	border: 2px solid gray;
+	border-radius: 10%;
+	background: #bbb;
+	color: #555;
+	text-shadow: 1px 1px 1px #eee;
+	padding: 3px;
+	cursor: pointer;
+	box-shadow: 4px 3px 10px 2px #444;
+}
+
+.button:hover {
+	box-shadow: 0 0 5px 4px #fff;
+}
+
+#delete:hover{
+	box-shadow: 0 0 5px 4px #a11;
+	background: #d00;
+}
+
+.button:active {
+	border: 0;
+}
+
+.logout {
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.pic{
+	height: 120px;
+}
+form{
+	margin: 10px 15px ;
+	text-align: center;
+}
+h3{
+	margin: 0 10px;
+	text-align: center;
+	color: red;
+}
+
+.delete-element{
+	margin: 25px;
+}
+
+input[type='text'] {
+	font-size: 16px;
+	padding-left: 5px;
+}
+
+input[type='checkbox'] {
+	transform: scale(1.5);
+    margin: 55px 10px;
+}   
+
+
+@media(max-width: 560px) {
+
+	.box {
+		margin: 5px 0;
+	}
+
+	.flexbox {
+		margin: 0;
+		display: block;
+	}
+
+	.file {
+		display: block;
+		width: 80%;
+	}
+
+	.settings {
+		width: auto;
+	}
+
+	.file input[type='submit'] {
+		margin: 5px auto;
+		display: block;
+	} 
+}

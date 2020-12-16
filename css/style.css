@@ -1,0 +1,500 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:visited {
+  color: #0000FF;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?e5jr");
+  src: url("../fonts/icomoon.eot?e5jr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?e5jr") format("truetype"), url("../fonts/icomoon.woff?e5jr") format("woff"), url("../fonts/icomoon.svg?e5jr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram {
+  height: 2.8rem;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.icon-mail:before {
+  font-size: 2.5rem;
+  content: "\e905";
+  color: #29f;
+  margin-right: 5px;
+}
+
+.icon-check:before {
+  content: "\e904";
+  position: relative;
+  font-size: 5rem;
+  color: #2b2;
+  top: 25px;
+}
+
+.icon-thumbs-up:before {
+  margin-right: 7px;
+  content: "\1f336";
+  font-size: 2.6rem;
+  color: #2c2;
+}
+
+.icon-thumbs-down:before {
+  content: "\e902";
+  font-size: 2rem;
+  color: #e00;
+}
+
+.icon-phone:before {
+  content: "\e901";
+  color: #2b2;
+  margin-right: 5px;
+}
+
+.icon-ok:before {
+  content: "\e900";
+  color: #0e0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: sans-serif;
+  color: #222;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+form {
+  color: #fff;
+  border: 2px solid #07f;
+  background-color: #09f;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px 3px rgba(10, 120, 250, 0.6);
+          box-shadow: 0 0 10px 3px rgba(10, 120, 250, 0.6);
+  text-shadow: 0 0 3px white;
+  border-radius: 6px;
+}
+
+form p {
+  text-align: center;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+}
+
+form .form-title {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+form input {
+  display: block;
+  background: white;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  padding: 4px 6px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+form label {
+  left: 10px;
+  float: left;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 300;
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+form input:focus + label,
+form input:valid + label {
+  -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+  margin-left: -7px;
+  outline: 0;
+}
+
+form .form-row {
+  margin-top: 20px;
+}
+
+form [type='submit'] {
+  width: 100%;
+  padding: 0;
+  line-height: 4.2rem;
+  background: #7b2;
+  border-width: 0;
+  color: #fff;
+  font-size: 2.0rem;
+  -webkit-box-shadow: 0 0 4px 2px rgba(40, 255, 10, 0.4);
+          box-shadow: 0 0 4px 2px rgba(40, 255, 10, 0.4);
+  text-shadow: 0 0 3px white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button {
+  padding: 7px;
+  font-size: 2.0rem;
+  background-color: #09f;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px 1px rgba(10, 120, 250, 0.6);
+          box-shadow: 0 0 10px 1px rgba(10, 120, 250, 0.6);
+  text-shadow: 0 0 3px white;
+  border-radius: 10px;
+}
+
+.header {
+  padding: 20px 20px;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0 0 6px 6px #ddd;
+          box-shadow: 0 0 6px 6px #ddd;
+  top: 0;
+  z-index: 2;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  font-size: 2rem;
+}
+
+.header .header__logo__title {
+  margin-left: 15px;
+}
+
+.header .header__logo__title--big {
+  font-size: 4.6rem;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.header .header__info {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 240px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.6rem;
+}
+
+.header button {
+  font-size: 1.8rem;
+}
+
+.services {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.services__item {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-top: 15px;
+}
+
+.request {
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+  background: url("../img/main-picture.jpg") no-repeat top;
+  height: 900px;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 7px 7px #f8f8f8 inset;
+          box-shadow: 0 0 7px 7px #f8f8f8 inset;
+}
+
+.request form {
+  float: right;
+}
+
+.num-info {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  background-color: rgba(120, 150, 255, 0.2);
+  padding-bottom: 25px;
+}
+
+.num-info .num-info__item p {
+  position: relative;
+  left: 50px;
+}
+
+.num-info .flexbox {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.num-info__item-main {
+  position: relative;
+  top: 15px;
+  text-align: center;
+  line-height: 3.6rem;
+}
+
+.num-info__item-main p {
+  font-weight: bold;
+  line-height: 1;
+}
+
+.advantage {
+  width: 100%;
+  line-height: 3.6rem;
+  background: #eef;
+  padding-bottom: 20px;
+}
+
+.advantage .flexbox {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advantage hr {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 15px;
+}
+
+.advantage li {
+  margin-top: 5px;
+}
+
+.prices .flexbox {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.prices__item {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.prices img {
+  display: block;
+  height: 250px;
+  margin: 5px auto;
+  border: 1px solid gray;
+  -webkit-box-shadow: 1px 0 3px 1px;
+          box-shadow: 1px 0 3px 1px;
+}
+
+.prices h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.prices button {
+  margin-top: 10px;
+}
+
+.consultation {
+  margin: 10px 0 20px 0;
+}
+
+.consultation .flexbox {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.consultation h3 {
+  max-width: 25%;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.consultation [type="submit"] {
+  max-width: 20%;
+}
+
+.examples .slider {
+  padding: 20px;
+  margin: 20px;
+}
+
+.examples h2 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+.examples p {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.examples a img {
+  width: 30px;
+  vertical-align: top;
+}
+
+.footer {
+  background-color: #e1e1ff;
+}
+
+.footer .container {
+  margin: 30px auto 0 auto;
+  padding: 10px 10px 0 10px;
+  font-size: 2.4rem;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer h3 {
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer .flexbox {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer button {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer .copyright {
+  text-align: center;
+}

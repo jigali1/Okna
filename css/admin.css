@@ -1,0 +1,115 @@
+body {
+	background: rgb(72, 86, 91);
+	color: #eee;
+	text-shadow: 1px 1px 1px #eee,0 0 10px #000;
+	font-size: 1.3em;
+	padding-top: 4px;
+}
+a, a:visited{
+	text-decoration: none;
+	color: #09f;
+}
+a:hover{text-decoration: none;}
+
+.header{
+	text-align: center;
+	margin-top: 40px;
+}
+
+form {
+	margin: 0 20px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.button {
+	margin-left: 40px;
+	border: 2px solid gray;
+	border-radius: 10%;
+	background: #bbb;
+	color: #555;
+	text-shadow: 1px 1px 1px #eee;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 4px 3px 10px 2px #444;
+}
+
+.button:hover {
+	box-shadow: 0 0 5px 4px #fff
+}
+
+.button:active {
+	border: 0;
+}
+
+/*.logout {
+	text-decoration: none;
+	position: absolute;
+    right: 10px;
+    top: 6px;
+}*/
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+table {
+	margin: auto;
+	border: 2px solid black;
+	padding: 2px;
+	text-align: center;
+	text-shadow: 0 0 1px #eee;
+	font-size: 1.5em;
+}
+
+td {
+	border: 2px solid black;
+	padding: 5px;
+}
+
+input {
+	font-size: 1.2em;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+	input {
+		font-size: 0.8em;
+	}
+
+	td {
+		max-width: 33%;
+		padding: 1px;
+	}
+	table {
+		font-size: 0.8em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+
+	}
+	h3 {
+		text-align: center;
+	}
+	form {
+		/*max-width: 180px;*/
+		font-size: 0.8em;
+		width: 220px;
+		margin: 0;
+	}
+
+	form input {
+		display: block;
+		margin: 5px auto;
+	}
+}
+
