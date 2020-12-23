@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+//document.addEventListener("DOMContentLoaded", () => {
 
 	let maskOptions = {
 		mask: '+{7}(000)000-00-00',
@@ -59,4 +59,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		document.querySelector("#message").innerHTML = result;
 		popupMessage.classList.remove('hide');
 	}
-});
+//});
